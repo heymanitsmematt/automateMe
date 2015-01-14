@@ -1,0 +1,20 @@
+{% load staticfiles %}
+<html lang='en'>
+<head>
+    <link rel="stylesheet" href="{% static "scripts/clsearchercss.css"%}">
+    <script src="{% static "scripts/clsearcherjs.js"%}"></script>
+    <title>{% block title %}Craigslist Search Automator{% endblock %}</title>
+</head>
+<body>
+    <div id="header">
+        {% block header %}
+	<ul>
+	    <li><a href="/clsearcher">Home</a></li>
+	</ul>
+	{% endblock %}
+    </div>
+    <div id="content">
+	{% block content %}{% endblock %}
+    </div>
+</body>
+</html>
